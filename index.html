@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title> Demo </title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__content">
+                <!-- logo -->
+                <a href="#"> ASTRA </a>
+                
+                <!-- actions  -->
+                <div class="header__actions">
+                    <i class="ri-menu-line" id="nav--open"></i>
+                </div>
+            </div>
+            
+            <!-- search -->
+            <form class="header__search">
+                <input type="text" placeholder="search here">
+                <button>
+                    <i class="ri-search-line" id="nav-trigger-open"></i>
+                </button>
+            </form action="">
+        </div>
+    </header>
+
+    <!-- navigation -->
+    <nav class="nav" id="nav">
+        <!-- nav list -->
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__items"><a href="" class="nav__link"><i class="ri-home-line"></i><span>Home</span></a></li>
+                <li class="nav__items"><a href="" class="nav__link"><i class="ri-git-repository-line"></i><span>Books</span></a></li>
+                <li class="nav__items"><a href="" class="nav__link"><i class="ri-sticky-note-line"></i><span>About</span></a></li>
+                <li class="nav__items"><a href="" class="nav__link"><i class="ri-chat-3-line"></i><span>Contact</span></a></li>
+            </ul>
+        </div>
+
+        <!-- nav close -->
+        <div class="nav__close">
+            <i class="ri-close-fill" id="nav--close"></i>
+        </div>
+    </nav>
+
+    <!-- footer -->
+    <footer class="footer">
+        <!-- footer container -->
+        <div class="footer__container">
+            <!-- footer content -->
+            <div class="footer__content">
+                <!-- content heading -->
+                <h3> Shortcut </h3>
+
+                <!-- content list -->
+                <div class="content_list">
+                    <a href="#"> Popular Books </a>
+                    <a href="#"> Popular Genre </a>
+                    <a href="#"> Top Provider </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy"> &#169; BishalTamangDev. All rights reserved. </p>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal-container" id="modal-container-1">
+        <div class="modal">
+            <!-- modal top -->
+            <div class="modal-top">
+                <!-- modal title -->
+                <div class="modal-title">
+                    <p class="font-medium"> Title </p>
+                </div>
+
+                <!-- close modal -->
+                <i class="fa fa-multiply modal-close-trigger" id="modal-close-trigger-1"></i>
+            </div>
+
+            <!-- modal description -->
+            <div class="modal-description">
+                <p> Description </p>
+            </div>
+
+            <!-- modal action button -->
+            <div class="modal-action">
+                <button class="button-secondary" id="modal-action-close-trigger-1"> Action 1 </button>
+                <button class="button-primary"> Action 2 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="assets/js/main.js"> </script>
+
+    <script>
+        const nav = document.getElementById('nav');
+        const navOpen = document.getElementById('nav--open');
+        const navClose = document.getElementById('nav--close');
+
+        navOpen.addEventListener('click', function () {
+            nav.style = "right: 0%";
+        });
+
+        navClose.addEventListener('click', function () {
+            nav.style = "right: -100%";
+        });
+    </script>
+</body>
+
+</html>

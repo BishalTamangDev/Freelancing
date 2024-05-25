@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    position: fixed;
+    flex-direction: column;
+    background-color: var(--color-light);
+    border-bottom: 1px solid var(--color-shadow);
+}
+
+.header__container{
+    width: 76%;
+    width: 100%;
+    margin: auto;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__search {
+    display: none;
+}
+
+#nav--open {
+    cursor: pointer;
+}

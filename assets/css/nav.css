@@ -1,0 +1,40 @@
+.nav{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 285px;
+    height: 100vh;
+    padding: 3rem;
+    z-index: var(--z-fixed);
+    transition: right .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-light);
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav__link{
+    align-items: center;
+    column-gap: 0.6rem;
+    display: inline-flex;
+}
+
+.nav__link i{
+    font-size: 1.5rem;;
+    color: var(--color-dark);
+}
+
+.nav__close{
+    position: absolute;
+    top: 0.95rem;
+    right: 0.90rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
