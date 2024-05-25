@@ -54,11 +54,16 @@
 }
 
 html {
-    height: 100%;
     font: 16px;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 a {
@@ -215,11 +220,12 @@ button{
     display: flex;
     padding: 1rem;
     row-gap: 2.5rem;
+    margin-top: 51px;
     flex-direction: column;
-    background-color: var(--color-light);
+    background-color: var(--color-white);
 }
 
-.section{
-    margin: 0;
-    /* background-color: var(--color-negative); */
+.main__container{
+    width: 76%;
+    margin: auto;
 }
